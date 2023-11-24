@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 1);
+}
+
+.weatherContainer {
+  text-align: center;
+  width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(95, 95, 95, 0.35);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+form {
+  display: flex;
+}
+
+.city {
+  width: 75%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px 0px 0px 5px;
+  background-color: lightblue;
+  border: none;
+  outline: none;
+}
+
+.city::placeholder {
+  color: white;
+}
+
+.cityBtn {
+  width: 25%;
+  color: white;
+  font-size: 18px;
+  padding: 5px 20px;
+  background-color: #fe6700;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  outline: none;
+}
+
+.cityBtn:hover {
+  background-color: #c95101;
+  cursor: pointer;
+}
+
+.icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.temperature {
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  margin: 20px 0px;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 1);
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.details div {
+  color: white;
+  background-color: #fe66009c;
+  padding: 25px;
+  font-size: 18px;
+  border-radius: 10px;
+  margin: 10px;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 1);
+}
+
+.description {
+  color: red;
+  font-size: 25px;
+  text-shadow: 0px 0px 13px rgba(0, 0, 0, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: .6;
+  transition: all .5s;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/* Mobile Design */
+@media (max-width: 768px) {
+  body {
+    background-attachment: fixed;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  .weatherContainer {
+    text-align: center;
+    width: 380px;
+  }
+
+  .cityBtn {
+    width: 25%;
+    color: white;
+    font-size: 15px;
+    padding: 0px 0px;
+  }
+
+  .details div {
+    width: 100%;
+    font-size: 20px;
+  }
+}
